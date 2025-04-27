@@ -23,25 +23,25 @@
   <header class="bg-black py-8 shadow-lg">
     <div class="container mx-auto px-4 text-center">
       <h1 class="text-5xl font-extrabold text-pink-500 drop-shadow-md">Welcome to wfrankn's Streams</h1>
-      <p class="mt-4 text-xl text-gray-300">Catch me live on Twitch and TikTok! 🔥</p>
+      <p class="mt-4 text-xl text-gray-300">Catch me live on Twitch, TikTok, and YouTube! 🔥</p>
     </div>
   </header>
 
   <!-- Main Content -->
   <main class="py-12 flex-grow">
     <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-2 gap-12">
+      <div class="grid md:grid-cols-3 gap-12">
         
         <!-- Twitch Embed -->
         <div class="bg-gray-800 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
           <div class="p-6">
             <div class="flex items-center justify-between mb-4">
-              <h2 class="text-3xl font-bold text-purple-400">Twitch Stream</h2>
+              <h2 class="text-2xl font-bold text-purple-400">Twitch Stream</h2>
               <span class="bg-red-600 text-white text-sm font-bold py-1 px-3 rounded-full pulse">LIVE</span>
             </div>
             <div class="aspect-w-16 aspect-h-9">
               <iframe
-                src="https://player.twitch.tv/?channel=wfrankn&parent=fvangor4.github.io&parent=github.io"
+                src="https://player.twitch.tv/?channel=wfrankn&parent=fvangor4.github.io&parent=github.io&muted=true&autoplay=true"
                 frameborder="0"
                 allowfullscreen="true"
                 scrolling="no"
@@ -55,15 +55,39 @@
         <div class="bg-gray-800 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 text-center">
           <div class="p-6">
             <div class="flex items-center justify-center gap-2 mb-4">
-              <h2 class="text-3xl font-bold text-pink-400">TikTok Live</h2>
+              <h2 class="text-2xl font-bold text-pink-400">TikTok Live</h2>
               <span class="bg-red-600 text-white text-sm font-bold py-1 px-3 rounded-full pulse">LIVE</span>
             </div>
-            <p class="mb-6 text-gray-400">Join the TikTok fam and catch exclusive streams!</p>
+
+            <!-- TikTok Preview Box -->
+            <div class="w-full h-64 bg-gray-700 rounded-lg flex items-center justify-center text-gray-400 mb-6">
+              <span>TikTok Live Preview</span>
+            </div>
+
             <a href="https://www.tiktok.com/@wfrankn/live" 
                target="_blank"
                class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full text-xl shadow-lg transition-all duration-300">
               Watch on TikTok
             </a>
+          </div>
+        </div>
+
+        <!-- YouTube Live Embed -->
+        <div class="bg-gray-800 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-2xl font-bold text-red-500">YouTube Live</h2>
+              <span class="bg-red-600 text-white text-sm font-bold py-1 px-3 rounded-full pulse">LIVE</span>
+            </div>
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe
+                src="https://www.youtube.com/embed/live_stream?channel=UCXpyEq0pepZNW8d2bFWcXRQ&autoplay=1&mute=1"
+                frameborder="0"
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                class="w-full h-full rounded-lg">
+              </iframe>
+            </div>
           </div>
         </div>
 
@@ -80,6 +104,3 @@
 
 </body>
 </html>
-<!-- This HTML file is designed to be a simple landing page for wfrankn's live streams on Twitch and TikTok. 
-     It uses Tailwind CSS for styling and includes a pulse animation for the LIVE badges. 
-     The Twitch stream is embedded using an iframe, and the TikTok link directs users to the TikTok live page. -->
