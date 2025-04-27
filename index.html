@@ -3,47 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Streams - wfrankn</title>
+  <title>wfrankn Live Streams</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Simple pulse animation for the LIVE badges */
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-100 font-sans">
 
   <!-- Header -->
-  <header class="bg-gray-800 text-white py-6">
+  <header class="bg-black py-8 shadow-lg">
     <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl font-bold">Welcome to My Live Streams</h1>
-      <p class="mt-2 text-lg">Catch me live on Twitch and TikTok!</p>
+      <h1 class="text-5xl font-extrabold text-pink-500 drop-shadow-md">Welcome to wfrankn's Streams</h1>
+      <p class="mt-4 text-xl text-gray-300">Catch me live on Twitch and TikTok! 🔥</p>
     </div>
   </header>
 
   <!-- Main Content -->
   <main class="py-12">
     <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-2 gap-8">
+      <div class="grid md:grid-cols-2 gap-12">
         
         <!-- Twitch Embed -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="bg-gray-800 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
           <div class="p-6">
-            <h2 class="text-2xl font-bold mb-4">Twitch Stream</h2>
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-3xl font-bold text-purple-400">Twitch Stream</h2>
+              <span class="bg-red-600 text-white text-sm font-bold py-1 px-3 rounded-full pulse">LIVE</span>
+            </div>
             <div class="aspect-w-16 aspect-h-9">
               <iframe
                 src="https://player.twitch.tv/?channel=wfrankn&parent=fvangor4.github.io"
                 frameborder="0"
                 allowfullscreen="true"
                 scrolling="no"
-                class="w-full h-full">
+                class="w-full h-full rounded-lg">
               </iframe>
             </div>
           </div>
         </div>
 
-        <!-- TikTok Live Button -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div class="p-6 text-center">
-            <h2 class="text-2xl font-bold mb-4">TikTok Live</h2>
+        <!-- TikTok Live Link -->
+        <div class="bg-gray-800 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300 text-center">
+          <div class="p-6">
+            <div class="flex items-center justify-center gap-2 mb-4">
+              <h2 class="text-3xl font-bold text-pink-400">TikTok Live</h2>
+              <span class="bg-red-600 text-white text-sm font-bold py-1 px-3 rounded-full pulse">LIVE</span>
+            </div>
+            <p class="mb-6 text-gray-400">Join the TikTok fam and catch exclusive streams!</p>
             <a href="https://www.tiktok.com/@wfrankn/live" 
                target="_blank"
-               class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full">
+               class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full text-xl shadow-lg transition-all duration-300">
               Watch on TikTok
             </a>
           </div>
@@ -54,9 +72,9 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto px-4 text-center">
-      <p>&copy; 2025 wfrankn. All rights reserved.</p>
+  <footer class="bg-black py-6 mt-12">
+    <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+      &copy; 2025 wfrankn. All rights reserved.
     </div>
   </footer>
 
