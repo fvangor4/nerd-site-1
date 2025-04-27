@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Streams - wfrankn</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold">Welcome to My Live Streams</h1>
+      <p class="mt-2 text-lg">Catch me live on Twitch and TikTok!</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Twitch Embed -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="p-6">
+            <h2 class="text-2xl font-bold mb-4">Twitch Stream</h2>
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe
+                src="https://player.twitch.tv/?channel=wfrankn&parent=localhost&parent=yourdomain.github.io"
+                frameborder="0"
+                allowfullscreen="true"
+                scrolling="no"
+                class="w-full h-full">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- TikTok Embed -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div class="p-6">
+            <h2 class="text-2xl font-bold mb-4">TikTok Live</h2>
+            <div class="aspect-w-9 aspect-h-16">
+              <iframe
+                src="https://www.tiktok.com/@ryyely/live?"
+                frameborder="0"
+                allowfullscreen="true"
+                scrolling="no"
+                class="w-full h-full">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 wfrankn. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
